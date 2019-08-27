@@ -35,14 +35,6 @@ const FormikApp = withFormik({
       plan: plan || "premium"
     };
   },
-  validationSchema: Yup.object({
-    email: Yup.string()
-      .email()
-      .required(),
-    password: Yup.string()
-      .min(9)
-      .required()
-  }),
   handleSubmit(values) {
     console.log(values);
   }
